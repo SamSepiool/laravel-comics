@@ -38,4 +38,9 @@
             </div>
         </div>
     </div>
+
+    <div class="hero">
+        <img src="{{asset('images/jumbotron.jpg')}}" alt="alt" style="">
+    </div>
 </header> 
+
