@@ -18,7 +18,6 @@ return [
         
            
             "name"=> "SHOP",
-   
             "links"=> [
                 "Shop DC",
                 "Shop DC Collectibles",

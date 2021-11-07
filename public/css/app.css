@@ -160,24 +160,28 @@ header .hero img {
 }
 
 footer {
-  color: lightgray;
+  color: gray;
+}
+footer .top,
+footer .logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 footer .top {
   background-image: url("../images/footer-bg.jpg");
-  padding: -6.25rem 0;
 }
 footer .top .container {
   display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 footer .top .container .main_list {
   display: flex;
-  justify-content: flex-start;
-  padding: 1.875rem 0;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 footer .top .container .main_list li {
   margin-right: 1.875rem;
-  color: gray;
 }
 footer .top .container .main_list h3 {
   font-size: 1.2em;
@@ -187,34 +191,41 @@ footer .top .container .main_list h3 {
 footer .top .container .main_list .sub_menu {
   margin-top: 1.25rem;
 }
+footer .top .container .container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+  max-width: 580px;
+}
+footer .top .container .container .copyright a {
+  color: #0282f9;
+}
 footer .top .container .logo {
   background-image: url("../images/dc-logo-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   flex-grow: 1;
   margin-left: 12.5rem;
 }
-footer .top .bottom {
+footer .bottom {
   background-color: #303030;
   padding: 1.875rem;
 }
-footer .top .bottom .container {
+footer .bottom .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-footer .top .bottom .container > a {
+footer .bottom .container > a {
   color: white;
   border: 2px solid #0282f9;
   padding: 0.625rem 1.25rem;
 }
-footer .top .bottom .container ul {
+footer .bottom .container ul {
   display: flex;
   align-items: center;
 }
-footer .top .bottom .container ul li:first-child {
+footer .bottom .container ul li:first-child {
   color: #0282f9;
 }
-footer .top .bottom .container ul li {
+footer .bottom .container ul li {
   margin: 0.625rem;
 }

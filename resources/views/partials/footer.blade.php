@@ -50,72 +50,43 @@
 
                 
 
-               
-
-                {{-- @foreach ($footerLinks as $list)
-                <li>
-
-                    <h3>{{$list['name']}}</h3>
-
-                    <ul>
-                        @foreach ($list['links'] as $link)
-                        <li>
-                            <a>{{$link}}</a>
-                        </li>
-                        @endforeach
-                    </ul>
-
-                    @foreach ($footerLinks['list1']['subMenu'] as $subList)
-                    <ul>
-
-                        <li>
-                            <h3>{{$subList['name']}}</h3>
-                        </li>
-
-                        @foreach ($subList['links'] as $link)
-                        <li>
-                            <a>{{$link}}</a>
-                        </li>
-                        @endforeach
-
-                    </ul>
-                    @endforeach
-                  
-
-                </li>  
-                @endforeach --}}
-
+                
             </div>
-
             <div class="logo"></div>
-
-
-        
+            
+            <div class="container">
+                <p class="copyright">
+                    All Site Content TM and© 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.
+                    <a href="#">Cookies Settings</a>
+                </p>     
+            </div>
         </div>
 
-        <div class="bottom">
+        
 
-            <div class="container">
+        
+    </div>
 
-                <a href="">SIGN-UP NOW!</a>
-                
-                <ul>
-                    <li><h3>FOLLOW US</h3></li>
-                    @foreach ($social as $item)
-                    <li>
-                        <a href="{{$item['url']}}">
-                            <img src="{{$item['logoSrc']}}" alt="{{$item['logo']}}">
-                        </a>
-                    </li>
-                    @endforeach
-                   
-                </ul>
+    <div class="bottom">
 
-            </div>
+        <div class="container">
+
+            <a href="">SIGN-UP NOW!</a>
+            
+            <ul>
+                <li><h3>FOLLOW US</h3></li>
+                @foreach ($social as $item)
+                <li>
+                    <a href="{{$item['url']}}">
+                        <img src="{{$item['logoSrc']}}" alt="{{$item['logo']}}">
+                    </a>
+                </li>
+                @endforeach
+               
+            </ul>
 
         </div>
 
     </div>
 
-    
 </footer>

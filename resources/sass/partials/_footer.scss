@@ -1,22 +1,31 @@
 footer{
-    color:lightgray;
+    color: $gray;
+
+    // BACKGROUND-COMMON-SETTINGS
+    .top,
+    .logo{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    // ---------
 
     .top{
         background-image: url("../images/footer-bg.jpg");
-        padding: -6.25rem 0;
+        
        
         .container{
             display: flex;
-            justify-content: space-between;
-
+            position: relative;
+                    
             .main_list{
-            display: flex;
-            justify-content: flex-start;
-            padding: 1.875rem 0;
+                display: flex;
+                padding-top:40px;
+                padding-bottom: 100px;
 
                 li{
                     margin-right: 1.875rem;
-                    color: $gray;
+                    // color: $gray;
                 }
 
                 h3{
@@ -27,22 +36,34 @@ footer{
 
                 .sub_menu{
                     margin-top: 1.25rem;
-                    
+                }  
+            }
+
+            // COPYRIGHT CONTAINER (Samu scusa per il nastro adesivo)
+            .container{
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 30px;
+                max-width: 580px;
+
+                .copyright{
+
+                    a{
+                        color: $primaryBlue;
+                    }
+
                 }
             }
-
+            // -----------
             
-
             .logo{
                 background-image: url("../images/dc-logo-bg.png");
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
                 flex-grow: 1;
                 margin-left: 12.5rem;
-            }
-        }
-
+            }  
+        }    
+          
+    }
     .bottom{
         background-color: $primaryBlack;
         padding: 1.875rem;
@@ -50,6 +71,7 @@ footer{
         .container{
             display: flex;
             align-items: center;
+            justify-content: space-between;
 
             & > a{
                 color: $white;
@@ -70,12 +92,6 @@ footer{
                 }
             }
         }
-    }
-       
-    
-
-
-        
     }
 
     
