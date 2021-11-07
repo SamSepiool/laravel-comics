@@ -110,7 +110,7 @@ header .top ul li {
   margin-left: 4.375rem;
 }
 header .top ul li a {
-  color: #fff;
+  color: white;
 }
 header .bottom .container {
   display: flex;
@@ -143,6 +143,10 @@ header .bottom .container .search input {
 header .bottom .container .search button {
   border: none;
   background: none;
+  cursor: pointer;
+}
+header .bottom .container .search button i {
+  font-size: 1.125rem;
 }
 header .hero {
   position: relative;

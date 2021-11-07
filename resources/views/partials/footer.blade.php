@@ -48,9 +48,6 @@
                     @endforeach
                 </ul>
 
-                
-
-                
             </div>
             <div class="logo"></div>
             

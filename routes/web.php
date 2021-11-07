@@ -18,8 +18,10 @@ Route::get('/', function () {
     $comics = [
         'comics'=> config('comics'),
         'srvces'=> config('srvces'),
+        'headerLinks'=> config('headerLinks'),
         'footerLinks'=> config('footerLinks'),
-        'social'=> config('social')
+        'social'=> config('social'),
+
     ];
     return view('index', $comics );
 });
