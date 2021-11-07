@@ -17,7 +17,9 @@ Route::get('/', function () {
 
     $comics = [
         'comics'=> config('comics'),
-        'srvces'=> config('srvces')
+        'srvces'=> config('srvces'),
+        'footerLinks'=> config('footerLinks'),
+        'social'=> config('social')
     ];
     return view('index', $comics );
 });

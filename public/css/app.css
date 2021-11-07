@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 75rem;
   margin: auto;
@@ -153,4 +157,64 @@ header .hero img {
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
+}
+
+footer {
+  color: lightgray;
+}
+footer .top {
+  background-image: url("../images/footer-bg.jpg");
+  padding: -6.25rem 0;
+}
+footer .top .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .top .container .main_list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.875rem 0;
+}
+footer .top .container .main_list li {
+  margin-right: 1.875rem;
+  color: gray;
+}
+footer .top .container .main_list h3 {
+  font-size: 1.2em;
+  margin-bottom: 0.625rem;
+  color: white;
+}
+footer .top .container .main_list .sub_menu {
+  margin-top: 1.25rem;
+}
+footer .top .container .logo {
+  background-image: url("../images/dc-logo-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-grow: 1;
+  margin-left: 12.5rem;
+}
+footer .top .bottom {
+  background-color: #303030;
+  padding: 1.875rem;
+}
+footer .top .bottom .container {
+  display: flex;
+  align-items: center;
+}
+footer .top .bottom .container > a {
+  color: white;
+  border: 2px solid #0282f9;
+  padding: 0.625rem 1.25rem;
+}
+footer .top .bottom .container ul {
+  display: flex;
+  align-items: center;
+}
+footer .top .bottom .container ul li:first-child {
+  color: #0282f9;
+}
+footer .top .bottom .container ul li {
+  margin: 0.625rem;
 }
